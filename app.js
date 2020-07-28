@@ -82,8 +82,8 @@ function Game(ui) {
         var x;
         var y
         while(true){
-          x=parseInt(Math.random() * (4 - 0) -2);
-          y=parseInt(Math.random() * (4 - 0) -2);
+          x=parseInt(Math.random() * (1000 - 0)%5)-2;
+          y=parseInt(Math.random() * (1000 - 0)%5)-2;
           if(cells[x][y].sign==null){
             turn++;
             cells[x][y].sign='x';
